@@ -72,4 +72,3 @@ The goal is to understand EV adoption trends, key influencing factors, and perfo
 
 ---
 
-## 📁 Project Structure
