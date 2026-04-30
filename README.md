@@ -12,6 +12,11 @@ This project focuses on analyzing Electric Vehicle (EV) population data to extra
 The goal is to understand EV adoption trends, key influencing factors, and performance patterns.
 
 ---
+## 📂 Dataset
+The dataset used in this project is publicly available.
+
+You can download it from:
+https://catalog.data.gov/dataset/electric-vehicle-population-data
 
 ## ⚙️ Technologies Used
 - Python
