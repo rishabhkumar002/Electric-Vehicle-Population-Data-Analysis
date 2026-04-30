@@ -18,6 +18,8 @@ The dataset used in this project is publicly available.
 You can download it from:
 https://catalog.data.gov/dataset/electric-vehicle-population-data
 
+Note: This project uses a previously downloaded version of the dataset.
+
 ## ⚙️ Technologies Used
 - Python
 - Pandas
