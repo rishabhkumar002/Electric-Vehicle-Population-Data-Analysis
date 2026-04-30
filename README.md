@@ -1,5 +1,11 @@
 # 🚀 EV Data Analysis & Range Prediction using Machine Learning
 
+## 🚀 Key Improvements
+- Built end-to-end ML pipeline for EV data analysis
+- Performed data cleaning, feature engineering, and outlier handling
+- Developed regression model to predict electric range
+- Generated multiple visual insights using EDA
+
 ## 📌 Project Overview
 This project focuses on analyzing Electric Vehicle (EV) population data to extract meaningful insights and build a machine learning model to predict electric range.
 
@@ -71,4 +77,8 @@ The goal is to understand EV adoption trends, key influencing factors, and perfo
   - R² Score: ~0.11 (moderate relationship)
 
 ---
+## 📌 Future Improvements
+- Use advanced models like Random Forest / XGBoost
+- Deploy using Streamlit for real-time predictions
+- Improve model accuracy with more features
 
