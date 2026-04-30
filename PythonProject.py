@@ -8,13 +8,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 import warnings
 warnings.filterwarnings('ignore')
 
-# Set plot style for better visuals
-# plt.style.use('seaborn')
-# sns.set_palette("deep")
-
 # Load the dataset
 # Assuming the dataset is in CSV format after converting from Excel
-df = pd.read_csv("C:/Users/jaisw/Downloads/Electric_Vehicle_Population_Data (1).csv")
+df = pd.read_csv("Electric_Vehicle_Population_Data.csv")
 
 # --- Data Cleaning ---
 # Drop irrelevant columns
@@ -135,8 +131,8 @@ plt.title('Electric Range vs. Model Year with Linear Regression')
 plt.xlabel('Model Year')
 plt.ylabel('Electric Range (miles)')
 plt.legend()
-plt.show()
 plt.savefig('electric_range_vs_model_year_regression.png')
+plt.show()
 plt.close()
 
 # --- Exploratory Data Analysis ---
@@ -151,8 +147,8 @@ plt.title('Distribution of Electric Vehicle Types')
 plt.xlabel('EV Type')
 plt.ylabel('Count')
 plt.xticks(rotation=45)
-plt.show()
 plt.savefig('ev_type_distribution.png')
+plt.show()
 plt.close()
 
 # Top 10 Vehicle Makes
@@ -162,8 +158,8 @@ sns.barplot(x=top_makes.values, y=top_makes.index)
 plt.title('Top 10 Vehicle Makes')
 plt.xlabel('Count')
 plt.ylabel('Make')
-plt.show()
 plt.savefig('top_makes.png')
+plt.show()
 plt.close()
 
 # Electric Range Distribution
@@ -172,8 +168,8 @@ sns.histplot(df['Electric Range'], bins=30, kde=True)
 plt.title('Distribution of Electric Range')
 plt.xlabel('Electric Range (miles)')
 plt.ylabel('Frequency')
-plt.show()
 plt.savefig('electric_range_distribution.png')
+plt.show()
 plt.close()
 
 # Model Year Distribution
@@ -182,8 +178,8 @@ sns.histplot(df['Model Year'], bins=range(2000, 2026), kde=False)
 plt.title('Distribution of Model Years')
 plt.xlabel('Model Year')
 plt.ylabel('Count')
-plt.show()
 plt.savefig('model_year_distribution.png')
+plt.show()
 plt.close()
 
 # Electric Range vs. Base MSRP
@@ -192,8 +188,8 @@ sns.scatterplot(data=df, x='Electric Range', y='Base MSRP', hue='Electric Vehicl
 plt.title('Electric Range vs. Base MSRP')
 plt.xlabel('Electric Range (miles)')
 plt.ylabel('Base MSRP ($)')
-plt.show()
 plt.savefig('range_vs_msrp.png')
+plt.show()
 plt.close()
 
 # Geographic Distribution by County (Top 10)
@@ -203,8 +199,8 @@ sns.barplot(x=top_counties.values, y=top_counties.index)
 plt.title('Top 10 Counties by EV Population')
 plt.xlabel('Count')
 plt.ylabel('County')
-plt.show()
 plt.savefig('top_counties.png')
+plt.show()
 plt.close()
 
 # Correlation Heatmap
@@ -213,8 +209,8 @@ numerical_cols = ['Model Year', 'Electric Range', 'Base MSRP', 'Vehicle Age', 'E
 corr_matrix = df[numerical_cols].corr()
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
-plt.show()
 plt.savefig('correlation_heatmap.png')
+plt.show()
 plt.close()
 
 # Range Category Distribution
@@ -224,8 +220,8 @@ plt.title('Distribution of Electric Range Categories')
 plt.xlabel('Range Category')
 plt.ylabel('Count')
 plt.xticks(rotation=45)
-plt.show()
 plt.savefig('range_category_distribution.png')
+plt.show()
 plt.close()
 
 # --- Key Findings ---
